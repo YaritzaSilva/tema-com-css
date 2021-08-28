@@ -1,14 +1,41 @@
-body {
-}
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Knewave&family=Special+Elite&display=swap');
 
+body {
+    background-image: url("universo.jpg");
+}
+@keyframes go-back {
+    0% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
 main#container {
+    animation: go-back 10s;
+    background-color: rgb(0, 4, 27);
+    opacity:1.0;
+    transition: all 2s ease 0s;
 }
 
 h1.titulo {
+    font-family: 'Special Elite', cursive;
+    font-size: 36px;
+    border-radius: 2px;
+    color: cornsilk;
+    text-align: center;
 }
 
 p.frase {
+    font-family: 'Josefin Slab', serif;
+    font-size: 24px;
+    color: cornsilk;
+    text-align: center;
 }
 
 p.autor {
+    font-family:'Knewave', cursive;
+    font-size: 16px;
+    color: cornsilk;
+    text-align: center;
 }
